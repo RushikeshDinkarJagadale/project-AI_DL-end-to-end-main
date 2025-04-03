@@ -13,7 +13,6 @@
 9. Update the dvc.yaml
 10. app.py
 
-
 ## step 1 install git
 
 ## step 2 create project repository
