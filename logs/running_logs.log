@@ -61,3 +61,53 @@
 [2025-04-07 23:59:12,980: INFO: comman: created directory at: artifacts/data_ingestion]
 [2025-04-07 23:59:12,984: INFO: 1930546134: Downloading data from https://drive.google.com/drive/folders/1MQg2jzglfbpNcwQJGthQCOmCCjYTI9QP?usp=sharing into file artifacts/data_ingestion/data.zip]
 [2025-04-07 23:59:16,831: INFO: 1930546134: Downloaded data from https://drive.google.com/drive/folders/1MQg2jzglfbpNcwQJGthQCOmCCjYTI9QP?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-08 19:53:28,762: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-04-08 19:53:28,773: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-04-08 19:53:28,776: INFO: comman: created directory at: artifacts]
+[2025-04-08 19:53:28,778: INFO: comman: created directory at: artifacts/data_ingestion]
+[2025-04-08 19:53:28,781: INFO: 986331348: Downloading data from https://drive.google.com/file/d/1z48nZwQEb_iSdoJCFZEwD1OmFpZvqO9o/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-08 19:53:51,041: INFO: 986331348: Downloaded data from https://drive.google.com/file/d/1z48nZwQEb_iSdoJCFZEwD1OmFpZvqO9o/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-08 19:55:30,966: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-04-08 19:55:30,969: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-04-08 19:55:30,971: INFO: comman: created directory at: artifacts]
+[2025-04-08 19:55:30,973: INFO: comman: created directory at: artifacts/data_ingestion]
+[2025-04-08 19:55:30,974: INFO: 986331348: Downloading data from https://drive.google.com/file/d/1z48nZwQEb_iSdoJCFZEwD1OmFpZvqO9o/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-08 19:55:45,038: INFO: 986331348: Downloaded data from https://drive.google.com/file/d/1z48nZwQEb_iSdoJCFZEwD1OmFpZvqO9o/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-08 23:40:21,817: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-08 23:40:21,818: ERROR: main: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x000001D091232FC0> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "c:\Users\rushi\AI with DL Suraj Kale\MLops project\project-AI_DL-end-to-end-main\main.py", line 7, in <module>
+    data_ingestion.main()
+  File "c:\Users\rushi\AI with DL Suraj Kale\MLops project\project-AI_DL-end-to-end-main\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 18, in main
+    Config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rushi\AI with DL Suraj Kale\MLops project\project-AI_DL-end-to-end-main\src\cnnClassifier\config\configuration.py", line 15, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rushi\anaconda3\envs\dlenv\Lib\site-packages\ensure\main.py", line 870, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x000001D091232FC0> does not match annotation type <class 'pathlib.Path'>
+[2025-04-08 23:40:30,656: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-08 23:40:30,656: ERROR: main: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x000001F4E1032FC0> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "c:\Users\rushi\AI with DL Suraj Kale\MLops project\project-AI_DL-end-to-end-main\main.py", line 7, in <module>
+    data_ingestion.main()
+  File "c:\Users\rushi\AI with DL Suraj Kale\MLops project\project-AI_DL-end-to-end-main\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 18, in main
+    Config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rushi\AI with DL Suraj Kale\MLops project\project-AI_DL-end-to-end-main\src\cnnClassifier\config\configuration.py", line 15, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rushi\anaconda3\envs\dlenv\Lib\site-packages\ensure\main.py", line 870, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <function read_yaml at 0x000001F4E1032FC0> does not match annotation type <class 'pathlib.Path'>
+[2025-04-08 23:42:11,005: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-08 23:42:11,019: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-04-08 23:42:11,023: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-04-08 23:42:11,023: INFO: comman: created directory at: artifacts]
+[2025-04-08 23:42:11,023: INFO: comman: created directory at: artifacts/data_ingestion]
+[2025-04-08 23:42:11,023: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z48nZwQEb_iSdoJCFZEwD1OmFpZvqO9o/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-08 23:42:26,353: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1z48nZwQEb_iSdoJCFZEwD1OmFpZvqO9o/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-08 23:42:28,110: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
