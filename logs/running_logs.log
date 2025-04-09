@@ -111,3 +111,55 @@ ensure.main.EnsureError: Argument path_to_yaml of type <class 'str'> to <functio
 [2025-04-08 23:42:28,110: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2025-04-08 23:58:20,181: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-04-08 23:58:20,185: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-04-08 23:58:20,746: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-08 23:58:20,746: ERROR: main: Argument path_to_yaml of type <class 'box.config_box.ConfigBox'> to <function read_yaml at 0x00000217CBFC2FC0> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "c:\Users\rushi\AI with DL Suraj Kale\MLops project\project-AI_DL-end-to-end-main\main.py", line 7, in <module>
+    data_ingestion.main()
+  File "c:\Users\rushi\AI with DL Suraj Kale\MLops project\project-AI_DL-end-to-end-main\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 18, in main
+    Config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rushi\AI with DL Suraj Kale\MLops project\project-AI_DL-end-to-end-main\src\cnnClassifier\config\configuration.py", line 16, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rushi\anaconda3\envs\dlenv\Lib\site-packages\ensure\main.py", line 870, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path_to_yaml of type <class 'box.config_box.ConfigBox'> to <function read_yaml at 0x00000217CBFC2FC0> does not match annotation type <class 'pathlib.Path'>
+[2025-04-09 15:55:14,605: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-04-09 15:55:14,615: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-04-09 15:55:14,625: INFO: comman: created directory at: artifacts]
+[2025-04-09 15:57:28,516: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-04-09 15:57:28,522: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-04-09 15:57:28,522: INFO: comman: created directory at: artifacts]
+[2025-04-09 15:57:41,662: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-04-09 15:57:41,668: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-04-09 15:57:41,671: INFO: comman: created directory at: artifacts]
+[2025-04-09 15:59:10,265: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-04-09 15:59:10,268: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-04-09 15:59:10,275: INFO: comman: created directory at: artifacts]
+[2025-04-09 15:59:10,275: INFO: comman: created directory at: artifacts/prepare_base_model]
+[2025-04-09 15:59:58,972: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-09 15:59:59,582: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-09 16:34:23,574: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-09 16:34:23,590: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-04-09 16:34:23,607: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-04-09 16:34:23,624: INFO: comman: created directory at: artifacts]
+[2025-04-09 16:34:23,636: INFO: comman: created directory at: artifacts/data_ingestion]
+[2025-04-09 16:34:23,639: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z48nZwQEb_iSdoJCFZEwD1OmFpZvqO9o/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-09 16:34:40,072: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1z48nZwQEb_iSdoJCFZEwD1OmFpZvqO9o/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-04-09 16:34:41,303: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-09 16:34:41,303: INFO: main: *******************]
+[2025-04-09 16:34:41,303: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-04-09 16:34:41,307: INFO: comman: yaml file: config\config.yaml loaded successfully]
+[2025-04-09 16:34:41,307: INFO: comman: yaml file: params.yaml loaded successfully]
+[2025-04-09 16:34:41,307: INFO: comman: created directory at: artifacts]
+[2025-04-09 16:34:41,307: INFO: comman: created directory at: artifacts/prepare_base_model]
+[2025-04-09 16:34:42,188: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-09 16:34:43,076: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-04-09 16:34:43,307: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
